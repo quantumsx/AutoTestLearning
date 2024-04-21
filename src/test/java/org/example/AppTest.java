@@ -87,4 +87,28 @@ public class AppTest {
         Assert.assertEquals(sortedYears, years);
     }
 
+
+    @Test
+    public void deleteSecondUser(){
+        Specifications.installSpecification(Specifications.requestSpec(URL),Specifications.responseSpecUnique(204));
+
+        given()
+                .when()
+                .delete("api/users/2")
+                .then().log().all();
+    }
+
+    @Test
+    public void UpdateUserInfo(){
+        Specifications.installSpecification(Specifications.requestSpec(URL),Specifications.responseSpecOK200());
+
+        UserJob userJob = new UserJob("morpheus","zion resident");
+         UserJobInfo userJobInfo = given()
+                 .body(userJob)
+                 .when()
+                 .put("api/users/2")
+                .then().log().all()
+                .extract().as(UserJobInfo.class);
+        //  Assert.assertEquals(now, userJobInfo.getUpdatedAt());
+    }
 }
