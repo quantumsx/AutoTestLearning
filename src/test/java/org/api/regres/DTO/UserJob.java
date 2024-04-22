@@ -1,4 +1,4 @@
-package org.example.api;
+package org.api.regres.DTO;
 
 public class UserJob {
     private String name;

@@ -1,4 +1,4 @@
-package org.example.api;
+package org.api.regres.DTO;
 
 public class UserData {
     private Integer id;

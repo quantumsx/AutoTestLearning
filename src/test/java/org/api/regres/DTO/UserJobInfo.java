@@ -1,4 +1,4 @@
-package org.example.api;
+package org.api.regres.DTO;
 
 import java.util.Date;
 

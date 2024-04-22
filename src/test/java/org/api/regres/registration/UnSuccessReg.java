@@ -1,4 +1,4 @@
-package org.example.api;
+package org.api.regres.registration;
 
 public class UnSuccessReg {
     private String error;

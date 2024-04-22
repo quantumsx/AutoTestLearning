@@ -1,7 +1,13 @@
-package org.example;
+package org.api.regres;
 
-import io.restassured.http.ContentType;
-import org.example.api.*;
+import org.api.regres.DTO.ResourseList;
+import org.api.regres.DTO.UserData;
+import org.api.regres.DTO.UserJob;
+import org.api.regres.DTO.UserJobInfo;
+import org.api.regres.registration.SuccessReg;
+import org.api.regres.registration.UnSuccessReg;
+import org.api.regres.registration.UserRegistration;
+import org.api.regres.spec.Specifications;
 import org.junit.Assert;
 import org.junit.Test;
 
